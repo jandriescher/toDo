@@ -1,11 +1,10 @@
 ---------------------------------------------------------
-Informatik 3 - Abgabe 2 - Felix Stahmer & Jan Driescher
+toDo project - HTW Berlin summer semester 2018
 ---------------------------------------------------------
-Inhalt
+contents
 ---------------------------------------------------------
-1. Komplettes Projektverzeichnis
-2. Screenshot mit dem Klassendiagram
+1. complete project directory
+2. class diagram
 ---------------------------------------------------------
-Mit freundlichen Grüßen
-Felix Stahmer & Jan Driescher
+mad by Felix Stahmer & Jan Driescher
 ---------------------------------------------------------
