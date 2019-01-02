@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="static/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Archivo+Narrow" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Archivo+Black" rel="stylesheet">
+
+  {% if title %}
+  <title>Flask Blog - {{ title }}</title>
+  {% else %}
+  <title>Flask Blog</title>
+  {% endif %}
+</head>
+
+<body>
+  <header>
+    <div class="navbar">
+      <ul>
+        <li><a href="/">to do</a></li>
+        <li><a href="/done"><img src="../static/resources/icons/done_button_white.png" width=20px alt="done"></a></li>
+        <li><a href="/about"><img src="../static/resources/icons/about_white.png" width=20px alt="about"></a></li>
+        <li id="search"><a href="/search"><img src="../static/resources/icons/lupe_white.png" width=20px id="lupe" alt='hi'></a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<div id="input">
+  {% block input %}{% endblock %}
+</div>
+<div>
+  {% block content %}{% endblock %}
+</div>
+</body>
+</html>

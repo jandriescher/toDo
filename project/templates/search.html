@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+
+  {% block input %}
+  <div id="inputArea">
+    <br>
+    <div id="inputForm">
+    <form  action="/search_results" method="post">
+    {{form.hidden_field}}
+      <p>search</p>
+        {{form.search(cols="36.9")}}
+      <p><input id="submit" type="submit" value="Search"> </form></p>
+    </div>
+  </div>
+  {% endblock input%}
+
+  {% block content %}
+    {% for post in posts %}
+      <div class="Entry">
+        <div class="toDo">
+            <h1 id="title">{{ post.title }}</h1>
+            <p class="entryInfo">due: {{post.due}}</p>
+            <p class="entry">{{ post.content }}</p>
+            <br>
+        </div class="buttons">
+        </div>
+    {% endfor %}
+  {% endblock content%}

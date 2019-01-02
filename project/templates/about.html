@@ -1,0 +1,61 @@
+{% extends "layout.html" %}
+{% block content %}
+  <div class="about">
+    <div class="toDo">
+        <h1>graded2</h1>
+        <br>
+        <p class="entryInfo">Informatik 3 HTW SoSe18</p>
+        <p class="entry">a project by Felix Stahmer & Jan Driescher</p>
+        <br>
+            Aufgabe B-1 Web-Anwendung mit Flask
+            <br>
+            In dieser Aufgaben sollen Sie eine Web-Anwendung mit Flask entwickeln. Sie brauchen dazu
+            die Python-Pakete flask, flask-wtf, und SQLALchemy. Diese können Sie durch die KonsoleBefehle
+            pip install flask, pip intall flask-wtf bzw. pip install SQLAlchemy installieren.
+            Verwenden Sie die Datenbank sqlite. Ein SQLAlchemy-Tutorial finden Sie unter http:
+            <a href="http://docs.sqlalchemy.org/en/latest/orm/tutorial.html.">http://docs.sqlalchemy.org/en/latest/orm/tutorial.html.</a>
+              <br>
+              <br>
+              a) Entwickeln Sie eine Web-Anwendung, die eine persönliche TODO-Liste verwaltet. Eine
+              TODO-Liste besteht aus TODO-Items. Ein TODO-Item hat ein Feld due, das in Ihrer
+              Anwendung als String dargestellt werden kann, und die Felder title und description,
+              die Strings sind. Desweiteren hat das TODO-Item auch einen state, der entweder new
+              oder finished ist.
+              <br>
+              <br>
+              b) Die Anwendung soll folgende Funktionalitäten bieten
+              <ul class="aufzählung">
+              <li>• alle TODO-Items anzeigen</li>
+              <li>• ein neues TODO-Item anlegen</li>
+              <li>• den Zustand eines TODO-Items ändern</li>
+              <li>• nach TODO-Items suchen</li>
+              <li>• ein TODO-Item aus der DB löschen</li>
+              </ul>
+              <br>
+              <br>
+              c) Sorgen Sie mit geeigneten HTML- und CSS-Angaben fur eine akzeptable GUI
+              <br>
+              <br>
+              d) Kommentieren Sie Ihr Python-Programm hinreichend
+              <br>
+              <br>
+              e) Modellieren Sie in einem UML-Klassendiagramm die Klassen TODOList, TODOItem, und
+              deren Beziehungen.
+              <br>
+              <br>
+              <br>
+              <div class="line-separator"></div>
+              <br>
+              <div class="fußnoten">
+                Design and software written by Felix Stahmer and Jan Driescher
+                <br>
+                Icons used from <a href="https://material.io/">Material.io</a>
+                <br>
+                Assignment by Prof. Gefei Zhang - HTW University of Applied Science Berlin
+                2018
+                <br>
+                <br>
+              </div>
+    </div>
+  </div>
+{% endblock content%}

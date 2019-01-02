@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+
+
+  {% block input %}
+  <div id="inputArea">
+    <br>
+    <div id="inputForm">
+    <form  action="/add_entry" method="post">
+    {{form.hidden_field}}
+      <p>title</p>
+        {{form.title(cols="30")}}
+      <p>description</p>
+        {{form.description( rows="9", cols="30")}}
+      <p>due</p>
+        {{form.due(cols="30")}}
+      <p><input id="submit" type="submit" value="Send"> </form></p>
+    </div>
+  </div>
+  {% endblock input%}
+
+
+  {% block content %}
+    {% for post in posts %}
+
+      <div class="Entry">
+        <div class="toDo">
+            <h1 id="title">{{ post.title }}</h1>
+            <p class="entryInfo">due: {{post.due}}</p>
+            <p class="entry">{{ post.content }}</p>
+            <br>
+        </div class="buttons">
+            <button class="button" id="done" onclick="window.location='/check?id={{loop.index}}';"> <img src="../static/resources/icons/haken_white.png" width=20px alt="✔"></button>
+            <button class="button"id="delete" onclick="window.location='/delete?id={{loop.index}}';"><img src="../static/resources/icons/delete_white.png" width=20px alt="✘"></button>
+            <br>
+        </div>
+    {% endfor %}
+  {% endblock content%}
