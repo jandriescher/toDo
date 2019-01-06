@@ -8,3 +8,5 @@ contents
 ---------------------------------------------------------
 mad by Felix Stahmer & Jan Driescher
 ---------------------------------------------------------
+
+<img src = project/static/resources/images/screenshot.png>
